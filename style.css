@@ -1,0 +1,166 @@
+h1{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 57px;
+    /* or 124% */
+
+    letter-spacing: 0.2px;
+}
+
+h2{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+}
+
+h3{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    letter-spacing: 0.2px;
+}
+
+h4{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+}
+
+span{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+
+}
+
+#page1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("img/page1color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    min-height: 882px;
+    color: white;
+}
+
+#page1 header{
+    display: flex;
+    justify-content: space-between;
+    height: 78px;
+    align-items: center;
+
+}
+
+.button1{
+    background: #38A3F1;
+    border-radius: 35px;
+    width: 300px;
+    height: 50px;
+}
+
+#page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button2{
+    background: #EF2779;
+    width: 353px;
+    height: 50px;
+}
+
+#page4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+    color: white;
+}
+
+#page5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purplediv{
+    background: #EF2779;
+}
+
+.button3{
+    width: 300px;
+    height: 50px;
+    color: white;
+
+}
+
+#page8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page9 footer{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+
+
+.div-centre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
