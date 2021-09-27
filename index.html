@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <link href="reset.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css"/>
@@ -7,47 +7,95 @@
     <title>Title</title>
 </head>
 <body>
-<section class="text-centre" id="page1">
+
+<section class="" id="page1">
     <header class="padbot90">
         <img class="imgsize" src="img/header.png"/>
-        <div></div>
+        <div class="mobile"></div>
+        <div class="desktop">
+
+            <div class="flex">
+
+                <div class="tip-space-between marginright60 width500">
+                    <h2 class="h2">Home</h2>
+                    <h2 class="h2">Product</h2>
+                    <h2 class="h2">Pricing</h2>
+                    <h2 class="h2">About</h2>
+                    <h2 class="h2">Contact</h2>
+                </div>
+
+                <div class="tip-header">
+                    <input class="input email-input marginright20" placeholder="Your Email">
+                    <button class="button-sub marginright60">Subscribe</button>
+                </div>
+
+            </div>
+
+        </div>
+
     </header>
-    <h1 class="roboto">Lightning fast <br/>
-        prototyping </h1>
-    <h3 class="padbot90 roboto">Most calendars are designed for teams. <br/>
-        Slate is designed for freelancers</h3>
-    <img class="image1 padbot90" src="img/section1.png"/>
-    <button class="button1">Try for free</button>
+
+    <div class="mobile column centre">
+        <h1 class="h1 width320">Lightning fast
+            prototyping </h1>
+        <h3 class="font15 padbot90 width300">Most calendars are designed for teams.
+            Slate is designed for freelancers</h3>
+        <img class="image1 padbot90" src="img/section1.png"/>
+        <button class="button1">Try for Free</button>
+    </div>
+
+
+    <div class="desktop">
+
+        <div class="desktop-image">
+            <img class="desktop desktop-image-size" src="img/desktop-image.png"/>
+        </div>
+
+        <div class="desktop-page1">
+            <div class="column">
+                <h1 class="text-huge">We focus on
+                    ergonomics</h1>
+                <h2 class="font15">Most calendars are designed for teams.
+                    Slate is designed for freelancers</h2>
+                <button class="desktop-button margintop70">Try For Free</button>
+            </div>
+
+        </div>
+
+    </div>
+
 
 </section>
 
 <section id="page2">
-    <h2 class="padtop180 roboto">At your fingertips</h2>
-    <h1 class="roboto text1">Features</h1>
-    <h3 class="padbot90 roboto text-centre">Most calendars are designed for teams. <br/>
-        Slate is designed for freelancers</h3>
+    <h2 class="padtop180 h2">At your fingertips</h2>
+    <h1 class="h1">Features</h1>
+    <h3 class="padbot90 h2 text-centre text-width-standard">Most calendars are designed for teams.
+        Slate is designed for freelancers
+    </h3>
 
-    <div class="feature-item">
+
+    <div class="feature-item mobile">
         <div class="tip">
             <img class="padright20" src="img/food.png"/>
-            <h2 class="roboto">The best products
+            <h2>The best products
                 start with Sketch</h2>
         </div>
 
         <div class="tip padtop10">
-        <span class="roboto">Slate helps you see how many
+        <span>Slate helps you see how many
         more days you need to work to
         reach your financial goal.</span>
         </div>
     </div>
 
-    <div class="feature-item">
+    <div class="feature-item mobile">
         <div class="tip padbottom10">
             <img class="padright20" src="img/food.png"/>
             <h2 class="roboto">Fastest way to organize</h2>
         </div>
         <div class="tip padtop10">
-        <span class="roboto">
+        <span>
             Slate helps you see how many
         more days you need to work to
         reach your financial goal.
@@ -55,97 +103,344 @@
         </div>
     </div>
 
-    <div class="feature-item">
+    <div class="feature-item mobile">
         <div class="tip padbottom10">
             <img class="marginright20" src="img/food.png"/>
-            <h2 class="roboto">Work better together</h2>
+            <h2>Work better together</h2>
         </div>
-        <span class="tip padtop10 padbottom180 roboto">
+        <span class="tip padtop10 padbottom110">
             Slate helps you see how many
         more days you need to work to
         reach your financial goal.
         </span>
     </div>
+
+    <div class="flex-row margin-bottom90">
+
+        <div class="desktop">
+
+            <div class="tip column">
+                <div class="desktop-flex">
+                    <div class="image-center">
+                        <img class="desktop-mini-image marginright20" src="img/feature-item1.png"/>
+                    </div>
+
+                    <div class="tip width200">
+                        <h2>The best products
+                            start with Sketch</h2>
+                    </div>
+
+                </div>
+
+                <div class="tip width290 margintop20">
+            <span>Slate helps you see how many
+            more days you need to work to
+            reach your financial goal.</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="desktop column">
+
+            <div class="tip column">
+                <div class="desktop-flex">
+                    <div class="image-center">
+                        <img class="desktop-mini-image marginright20" src="img/feature-item2.png"/>
+                    </div>
+
+                    <div class="tip width200">
+                        <h2>Fastest way to
+                            organize</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tip width290 margintop20">
+                <span>Slate helps you see how many
+                    more days you need to work to
+                    reach your financial goal.</span>
+            </div>
+
+        </div>
+
+
+        <div class="desktop column">
+
+            <div class="flex-column">
+
+                <div class="desktop-flex">
+
+                    <div class="image-center">
+                        <img class="desktop-mini-image marginright20" src="img/food.png"/>
+                    </div>
+
+
+                    <div class="tip width200">
+                        <h2>Work better
+                            together</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tip width290 margintop20">
+                <span>Slate helps you see how many
+                    more days you need to work to
+                    reach your financial goal.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
 </section>
 
 <section id="page3">
-    <h1 class="roboto text1 text-centre">Lightning fast
+    <h1 class="h1 padtop90 padbottom25 width300 text-centre">Lightning fast
         prototyping </h1>
-    <h3 class="padbottom60 roboto text2 text-centre">
+    <h3 class="h2 text-centre text-width-standard">
         Most calendars are designed for teams.
         Slate is designed for freelancers
     </h3>
-    <button class="button1">Try for Free</button>
-    <img class="padtop60 padbottom180" src="img/macbook.png"/>
+    <button class="button1 margintop70 margin-bottom75">Try for Free</button>
+    <img class="padbottom90 macbookimage" src="img/macbook.png"/>
 </section>
 
-<section class="padtop60" id="page4">
-    <h2 class="roboto">At your fingertips</h2>
-    <h1 class="padbottom60 roboto">Newsletter</h1>
-    <h2 class="marginbottom20 roboto">Subscribe to our Newsletter</h2>
-    <span class="marginbottom50 roboto">Available exclusivery on Figmaland</span>
-    <form class="column padbottom180">
-        <input class="button4 marginbottom20 margintop50" type="text" placeholder="Your Email"/>
-        <button class="button5">Subscribe</button>
+<section class="padtop80" id="page4">
 
-    </form>
+    <div class="mobile centre margintop70">
+        <h2 class="h2">At your fingertips</h2>
+        <h1 class="padbottom60 h1">Newsletter</h1>
+        <h2 class="marginbottom20">Subscribe to our Newsletter</h2>
+        <span class="marginbottom50">Available exclusivery on Figmaland</span>
+
+        <div class="column padbottom110">
+            <input class="button4 marginbottom20 margintop50 input" type="text" placeholder="Your Email"/>
+            <button class="button5">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="desktop tip column">
+        <h2 class="h2">At your fingertips</h2>
+        <h1 class="h1">Lightning fast prototyping</h1>
+        <h2 class="marginbottom10">Subscribe to our Newsletter</h2>
+        <span class="marginbottom50">Available exclusivery on Figmaland</span>
+
+        <div class="column padbottom80">
+            <input class="button4 marginbottom20 margintop35 input" type="text" placeholder="Your Email"/>
+            <button class="button5">Subscribe</button>
+        </div>
+    </div>
 
 </section>
 
 <section class="padtop130" id="page5">
-    <h1 class="roboto">Partners</h1>
-    <h3 class="padbottom130 roboto text-centre">Most calendars are designed for teams. <br/>
+    <h1>Partners</h1>
+    <h3 class="padbottom130 text-centre text-width-standard h3">Most calendars are designed for teams.
         Slate is designed for freelancers</h3>
-    <h4 class="roboto padbottom20">Client Name</h4>
-    <img class="padbottom20" src="img/client1.png"/>
-    <span class="padbottom60 roboto text-centre">Slate helps you see how <br/>
-        many more days you need <br/>
-        to work to reach your <br/>
-        financial goal for <br/>
+
+    <div class="mobile">
+
+        <div class="tid column">
+            <h4 class="padbottom20">Client Name</h4>
+            <img class="padbottom20" src="img/client1.png"/>
+        </div>
+
+        <div class="text-width-smaller">
+        <span>
+            Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
         the month and year.</span>
-    <h4 class="roboto padbottom20">Client Name</h4>
-    <img class="padbottom20" src="img/client2.png"/>
-    <span class="padbottom60 roboto text-centre">Slate helps you see how <br/>
-        many more days you need <br/>
-        to work to reach your <br/>
-        financial goal for <br/>
+        </div>
+
+
+        <div class="tid column">
+            <h4 class="padbottom20">Client Name</h4>
+            <img class="padbottom20" src="img/client2.png"/>
+
+        </div>
+
+        <div class="text-width-smaller">
+        <span>Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
+        the month and year.
+        </span>
+        </div>
+
+        <div class="tid column">
+            <h4 class="padbottom20">Client Name</h4>
+            <img class="padbottom20" src="img/client3.png"/>
+        </div>
+
+        <div class="text-width-smaller">
+        <span>Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
         the month and year.</span>
-    <h4 class="roboto">Client Name</h4>
-    <img class="padbottom20" src="img/client3.png"/>
-    <span class="padbottom130 roboto">Slate helps you see how <br/>
-        many more days you need <br/>
-        to work to reach your <br/>
-        financial goal for <br/>
+        </div>
+
+    </div>
+
+
+    <div class="desktop margin-bottom90">
+
+        <div class="flex-row partners-items">
+
+            <div class="column margin26">
+                <div class="tid column">
+                    <h4 class="padbottom20">Client Name</h4>
+                    <img class="padbottom20 width-height122" src="img/client1.png"/>
+                </div>
+
+                <div class="text-width-smaller">
+        <span>
+            Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
+        the month and year.
+        </span>
+                </div>
+            </div>
+
+            <div class="column margin26">
+                <div class="tid column">
+                    <h4 class="padbottom20">Client Name</h4>
+                    <img class="padbottom20 width-height122" src="img/client2.png"/>
+                </div>
+
+                <div class="text-width-smaller">
+        <span>Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
+        the month and year.
+        </span>
+                </div>
+            </div>
+
+            <div class="column margin26">
+                <div class="tid column">
+                    <h4 class="padbottom20">Client Name</h4>
+                    <img class="padbottom20 width-height122" src="img/client3.png"/>
+                </div>
+
+
+                <div class="text-width-smaller">
+        <span>Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
         the month and year.</span>
-    <button class="button1">Try For Free</button>
+                </div>
+
+            </div>
+
+
+            <div class="column margin26">
+                <div class="tid column">
+                    <h4 class="padbottom20">Client Name</h4>
+                    <img class="padbottom20 width-height122" src="img/client3.png"/>
+                </div>
+
+                <div class="text-width-smaller">
+        <span>
+            Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
+        the month and year.
+        </span>
+                </div>
+            </div>
+
+            <div class="column margin26">
+                <div class="tid column">
+                    <h4 class="padbottom20">Client Name</h4>
+                    <img class="padbottom20 width-height122" src="img/airbnb-image.png"/>
+                </div>
+
+                <div class="text-width-smaller">
+        <span>Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
+        the month and year.
+        </span>
+                </div>
+            </div>
+
+            <div class="column margin26">
+                <div class="tid column">
+                    <h4 class="padbottom20">Client Name</h4>
+                    <img class="padbottom20 width-height122" src="img/appstore-image.png"/>
+                </div>
+
+
+                <div class="text-width-smaller">
+        <span>Slate helps you see how
+        many more days you need
+        to work to reach your
+        financial goal for
+        the month and year.</span>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <button class="button1 margin-bottom50">Try For Free</button>
 </section>
 
 <section class="padtop180" id="page6">
-    <h1 class="padbottom130 roboto">Testimonials</h1>
-    <img src="img/dropbox.png"/>
-    <h3 class="padtop60 padbottom60 roboto">Most calendars are designed for teams. <br/>
-        Slate is designed for freelancers who want a <br/>
-        simple way to plan their schedule.</h3>
+
+    <div class="padbottom60 tid column">
+        <h1 class="h1 padbottom110">Testimonials</h1>
+        <img class="dropbox-size padbottom60" src="img/dropbox.png"/>
+        <h3 class="mobile h3 text-width-standard text-centre">Most calendars are designed for teams.
+            Slate is designed for freelancers who want a
+            simple way to plan their schedule.</h3>
+
+        <h3 class="desktop h3 width750 text-centre">Most calendars are designed for teams.
+            Slate is designed for freelancers who want a
+            simple way to plan their schedule.</h3>
+    </div>
+
+
     <div class="tip padbottom90">
-        <img src="img/avatar.png"/>
+        <img class="mobile marginright20" src="img/avatar.png"/>
+        <img class="desktop marginright20" src="img/avatar2.png"/>
         <div>
-            <h3 class="roboto">Organize across</h3>
-            <span class="roboto">Ui designer</span>
+            <h3>Organize across</h3>
+            <span>Ui designer</span>
         </div>
     </div>
 
-    <button class="button1">More Testimonials</button>
+    <button class="button-testimonials margin-bottom100">More Testimonials</button>
 </section>
 
-<section class="padtop180" id="page7">
-    <h1 class="roboto">Pricing</h1>
-    <h3 class="roboto">Most calendars are designed for teams. <br/>
+<section class="padtop130" id="page7">
+    <h1 class="h1">Pricing</h1>
+    <h3 class="h3 text-width-standard text-centre padbottom110">Most calendars are designed for teams.
         Slate is designed for freelancers</h3>
 
-
-    <div class="priceform">
-        <h2 class="roboto">Free</h2>
-        <h3 class="padbottom40 text3 roboto">Organize across all apps by hand</h3>
+    <div class="mobile priceform">
+        <h2>Free</h2>
+        <h3 class="padbottom40 h3">Organize across all apps by hand</h3>
         <div>
             <img class="padbottom30" src="img/price1.png"/>
         </div>
@@ -155,9 +450,9 @@
         </div>
     </div>
 
-    <div class="priceform priceform-purple">
-        <h2 class="white-text roboto">STANDARD</h2>
-        <h3 class="padbottom40 white-text roboto">Organize across all apps by hand</h3>
+    <div class="mobile priceform priceform-purple">
+        <h2 class="white-text">STANDARD</h2>
+        <h3 class="padbottom40 white-text">Organize across all apps by hand</h3>
 
         <div>
             <img class="padbottom30" src="img/price3white.png"/>
@@ -167,9 +462,9 @@
         </div>
     </div>
 
-    <div class="priceform">
-        <h2 class="roboto">BUSINESS</h2>
-        <h3 class="padbottom40 text3 roboto">Organize across all apps by hand</h3>
+    <div class="mobile priceform margin-bottom120">
+        <h2>BUSINESS</h2>
+        <h3 class="padbottom40 text3">Organize across all apps by hand</h3>
 
         <div>
             <img class="padbottom30" src="img/price2black.png"/>
@@ -181,105 +476,322 @@
 
     </div>
 
-</section>
+    <div class="desktop priceform-desktop">
+        <div class="priceform">
+            <h2>Free</h2>
+            <h3 class="padbottom40 h3">Organize across all apps by hand</h3>
+            <div>
+                <img class="padbottom30 width110-price" src="img/price1.png"/>
+            </div>
 
-<section class="padtop180 darkbackground white-text" id="page8">
-    <div class="text-centre padbottom60">
-        <h1 class="roboto">Contact Us</h1>
-        <h3 class="roboto">Most calendars are designed for teams. <br/>
-            Slate is designed for freelancers</h3>
-    </div>
-
-    <div class="padbottom60">
-        <img class="padright20" src="img/twitter.png"/>
-        <img class="padright20" src="img/facebook.png"/>
-        <img src="img/in.png"/>
-    </div>
-
-    <div class="tip">
-        <img class="marginright20 marginbottom30" src="img/geolocation.png"/>
-        <span class="roboto padtop20">6386 Spring St undefined Anchorage,
-        Georgia 12473 United States</span>
-    </div>
-
-    <div class="tip">
-        <img class="marginright20 marginbottom30" src="img/phone.png"/>
-        <span class="roboto marginright365 padtop20">(843) 555-0130</span>
-    </div>
-
-    <div class="tip padbottom150">
-        <img class="marginright20" src="img/mail.png"/>
-        <span class="roboto marginright200">willie.jennings@example.com</span>
-    </div>
-
-    <form class="whitebackground margin-bottom50">
-        <div class="tip column div-centre">
-            <input class="button6 margin-bottom50 margintop150" placeholder="Your Name">
-            <input class="button6 margin-bottom50" placeholder="Your Mail">
-            <textarea class="textarea" placeholder="Your Message"></textarea>
-            <div class="margintop50 margin-bottom50 textleft">
-                <button class="send-button marginleftright2">Send</button>
+            <div>
+                <button class="button1">Order Now</button>
             </div>
         </div>
 
-    </form>
+        <div class="priceform">
+            <h2>STANDARD</h2>
+            <h3 class="padbottom40 h3">Organize across all apps by hand</h3>
+
+            <div>
+                <img class="width142-price padbottom30" src="img/price2black.png"/>
+            </div>
+            <div>
+                <button class="button1">Order Now</button>
+            </div>
+        </div>
+
+        <div class="priceform priceform-purple">
+            <h2 class="white-text">BUSINESS</h2>
+            <h3 class="white-text padbottom40 h3">Organize across all apps by hand</h3>
+
+            <div>
+                <img class="width142-price padbottom30" src="img/price99.png"/>
+            </div>
+
+            <div>
+                <button class="button3">Order Now</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+<section class="padtop90 darkbackground white-text" id="page8">
+    <div class="text-centre padbottom60">
+        <h1 class="h1">Contact Us</h1>
+        <h2 class="h3">Most calendars are designed for teams.
+            Slate is designed for freelancers</h2>
+    </div>
+
+    <div class="mobile">
+
+        <div class="padbottom60">
+            <img class="padright32" src="img/twitter.png"/>
+            <img class="padright32" src="img/facebook.png"/>
+            <img src="img/in.png"/>
+        </div>
+
+        <div class="column margin-bottom75">
+            <div class="feedback padbottom30 marginright20">
+                <img class="marginright20" src="img/geolocation.png"/>
+                <span class="width300">6386 Spring St undefined Anchorage,
+            Georgia 12473 United States</span>
+            </div>
+
+            <div class="feedback">
+                <div>
+                    <img class="marginright20 padbottom30 marginright20" src="img/phone.png"/>
+                </div>
+                <div class="feedbackheight70">
+                    <span class="">(843) 555-0130</span>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <img class="marginright20" src="img/mail.png"/>
+                <span class="marginright20">willie.jennings@example.com</span>
+            </div>
+        </div>
+
+
+        <form class="whitebackground margin-bottom150 tid flex-column">
+            <div class="tip column div-centre">
+                <div>
+                    <input class="button6 margin-bottom50 margintop150" placeholder="Your Name">
+                </div>
+
+                <div>
+                    <input class="button6 margin-bottom50" placeholder="Your Mail">
+                </div>
+
+                <div class="margin-bottom75 marginleftright">
+                    <textarea class="textarea" placeholder="Your Message"></textarea>
+                </div>
+
+            </div>
+
+            <div class="margin-bottom75 button-container">
+                <button class="send-button">Send</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="desktop">
+        <div class="tip margin-bottom85">
+                <div class="tip">
+                    <form class="whitebackground tid flex-column">
+
+                        <div class="tip column div-centre">
+                            <div>
+                                <input class="button6 marginbottom30 width320 margintop80" placeholder="Your Name">
+                            </div>
+
+                            <div>
+                                <input class="button6 marginbottom30 width320" placeholder="Your Mail">
+                            </div>
+
+                            <div class="marginbottom30 marginleftright">
+                                <textarea class="textarea width320" placeholder="Your Message"></textarea>
+                            </div>
+
+                            <div class="marginbottom30 button-container">
+                                <button class="send-button">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            <div class="flex-column margin-left65">
+
+                <div>
+                    <div class="column margin-bottom75">
+                        <div class="feedback padbottom30 marginright20">
+                            <img class="marginright20 desktop-footer-images" src="img/geolocation.png"/>
+                            <span class="width300">6386 Spring St undefined Anchorage,
+            Georgia 12473 United States</span>
+                        </div>
+
+                        <div class="feedback">
+                            <div>
+                                <img class="marginright20 padbottom30 marginright20" src="img/phone.png"/>
+                            </div>
+                            <div class="feedbackheight70">
+                                <span class="">(843) 555-0130</span>
+                            </div>
+                        </div>
+
+                        <div class="feedback">
+                            <img class="marginright20" src="img/mail.png"/>
+                            <span class="marginright20">willie.jennings@example.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="social-links margintop50">
+                        <div>
+                            <img class="padright40" src="img/twitter.png"/>
+                        </div>
+
+                        <div>
+                            <img class="padright40" src="img/facebook.png"/>
+                        </div>
+
+                        <div>
+                            <img class="padright40" src="img/in.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
 </section>
 
 <section id="page9">
     <footer>
-        <div class="tid column margintop150 padbottom60">
-            <h3 class="padbottom20 font-size30 roboto">Pages</h3>
-            <span class="padbottom20 roboto">Eleanor Edwards</span>
-            <span class="padbottom20 roboto">Ted Robertson</span>
-            <span class="padbottom20 roboto">Annette Russell</span>
-            <span class="padbottom20 roboto">Jennie Mckinney</span>
-            <span class="padbottom60 roboto">Gloria Richards</span>
-            <img src="img/map.png">
+        <div class="mobile tid column margintop130 padbottom60">
+            <h2 class="padbottom25 h1">Pages</h2>
+            <span class="padbottom16 h2">Eleanor Edwards</span>
+            <span class="padbottom16">Ted Robertson</span>
+            <span class="padbottom16">Annette Russell</span>
+            <span class="padbottom16">Jennie Mckinney</span>
+            <span class="padbottom16 margin-bottom50">Gloria Richards</span>
+            <img class="map-size" src="img/map.png">
         </div>
 
-        <div class="tip">
-            <div>
-                <img class="marginright20" src="img/geolocation.png"/>
-            </div>
+        <div class="mobile column">
+            <div class="feedback marginbottom30">
+                <div>
+                    <img class="marginright20" src="img/geolocation.png"/>
+                </div>
 
-            <div>
-                <span class="roboto">6386 Spring St undefined Anchorage, <br/>
+                <div class="feedback height50w300">
+                <span>
+                    6386 Spring St undefined Anchorage,
                 Georgia 12473 United States</span>
+                </div>
             </div>
+
+            <div class="feedback marginbottom30">
+                <div>
+                    <img class="marginright20" src="img/phone.png"/>
+                </div>
+                <div>
+                    <span>(843) 555-0130</span>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <div>
+                    <img class="marginright20" src="img/mail.png"/>
+                </div>
+
+                <div>
+                    <span>willie.jennings@example.com</span>
+                </div>
+
+            </div>
+            <div class="social-links margintop50">
+                <div>
+                    <img class="padright40" src="img/twitter.png"/>
+                </div>
+
+                <div>
+                    <img class="padright40" src="img/facebook.png"/>
+                </div>
+
+                <div>
+                    <img class="padright40" src="img/in.png"/>
+                </div>
+            </div>
+
         </div>
 
-        <div class="tip">
-            <div>
-                <img class="marginright20" src="img/phone.png"/>
-            </div>
-            <div>
-                <span>(843) 555-0130</span>
-            </div>
-        </div>
 
-        <div class="tip">
+        <div class="desktop margintop130 margin-bottom150">
+            <div class="tid">
+                <div class="desktop tid column margintop130 padbottom60 flex-start-desktop">
+                    <h2 class="padbottom25 h1">Pages</h2>
+                    <span class="padbottom16 h2">Eleanor Edwards</span>
+                    <span class="padbottom16">Ted Robertson</span>
+                    <span class="padbottom16">Annette Russell</span>
+                    <span class="padbottom16">Jennie Mckinney</span>
+                    <span class="padbottom16 margin-bottom50">Gloria Richards</span>
+                </div>
 
-            <div>
-                <img class="marginright20" src="img/mail.png"/>
-            </div>
+                <div>
+                    <iframe class="map-size-desktop marginleft100 marginright60"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d80246.90395584356!2d37.69865362761181!3d55.7570405215231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1631963201219!5m2!1sru!2sru"
+                            width="600" height="450" style="border:0; border-radius: 10px" allowfullscreen=""
+                            loading="lazy">
 
-            <div>
-                <span class="roboto">willie.jennings@example.com</span>
-            </div>
-        </div>
+                    </iframe>
+                </div>
 
-        <div class="margintop50 margin-bottom150 padright100">
 
-            <div>
-                <img class="padright40" src="img/twitter.png"/>
-            </div>
+                <div class="desktop">
 
-            <div>
-                <img class="padright40" src="img/facebook.png"/>
-            </div>
+                    <div class="column">
+                        <div class="feedback marginbottom30">
+                            <div>
+                                <img class="marginright20" src="img/geolocation.png"/>
+                            </div>
 
-            <div>
-                <img class="padright40" src="img/in.png"/>
+                            <div class="feedback height50w300">
+                <span>
+                    6386 Spring St undefined Anchorage,
+                Georgia 12473 United States</span>
+                            </div>
+                        </div>
+
+                        <div class="feedback marginbottom30">
+                            <div>
+                                <img class="marginright20" src="img/phone.png"/>
+                            </div>
+                            <div>
+                                <span>(843) 555-0130</span>
+                            </div>
+                        </div>
+
+                        <div class="feedback">
+                            <div>
+                                <img class="marginright20" src="img/mail.png"/>
+                            </div>
+
+                            <div>
+                                <span>willie.jennings@example.com</span>
+                            </div>
+
+                        </div>
+
+                        <div class="social-links margintop50">
+                            <div>
+                                <img class="padright40" src="img/twitter.png"/>
+                            </div>
+
+                            <div>
+                                <img class="padright40" src="img/facebook.png"/>
+                            </div>
+
+                            <div>
+                                <img class="padright40" src="img/in.png"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
 
         </div>
