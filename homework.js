@@ -85,7 +85,6 @@
 // let hours = 60 * minutes;
 
 
-
 // let N = 46 * minutes;
 // console.log(N);
 
@@ -101,7 +100,6 @@
 //
 // console.log(N/60/60);
 // console.log(N);
-
 
 
 // Integer21
@@ -270,8 +268,6 @@
 // const x = 10;
 // const y = 10;
 
-
-// Boolean25
 // if (x < 0 && y > 0) {
 //     console.log(true)
 // }   else {
@@ -359,3 +355,387 @@
 //     console.log('Первое число')
 // }
 
+
+// Begin11
+// Даны два ненулевых числа. Найти сумму, разность, произведение и частное их модулей.
+
+// let a = 10;
+// let b = 15;
+
+// console.log(a + b, a - b, a * b);
+
+
+// Begin14
+// Дана длина L окружности. Найти ее радиус R и площадь S круга, ограниченного этой окружностью,
+//     учитывая, что L = 2πR, S = π*R^2 . В качестве значения π использовать 3.14.
+
+// let L = 10;
+// let p = 3.14;
+// let R = (2 * p) / L
+// let S = p * Math.pow(R, 2)
+// console.log(S)
+// console.log(R)
+
+// Integer8 (Не сделал)
+// Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
+// let a = 21;
+
+
+// Boolean5
+// Даны два целых числа: A, B. Проверить истинность высказывания: «Справедливы неравенства A ≥ 0 или B < −2».
+
+// let A = 0;
+// let B = 3;
+//
+// if ((A >= 0 || B < -2)) {
+//     console.log(true)
+// } else {
+//     false
+// }
+
+
+// if4
+// Даны три целых числа. Найти количество положительных чисел в исходном наборе.
+
+// let a = 3
+// let b = 1
+// let c = 4
+// let positiveNumbers = 0;
+//
+// if (a > 0) {
+//     positiveNumbers++
+// } if (b > 0) {
+//     positiveNumbers++
+// } if (c > 0) {
+//     positiveNumbers++
+// }
+//
+// console.log(positiveNumbers)
+
+// Integer30
+// Дан номер некоторого года (целое положительное число). Определить соответствующий ему номер
+// столетия, учитывая, что, к примеру, началом 20 столетия был 1901 год.
+
+// let someYear = 1994
+// let centuary = Math.floor(someYear/100) + 1
+// console.log(centuary)
+
+// Boolean31
+// Даны целые числа a, b, c, являющиеся сторонами некоторого треугольника.
+//     Проверить истинность высказывания: «Треугольник со сторонами a, b, c является равнобедренным».
+
+// let a = 10
+// let b = 10
+// let c = 10
+//
+// if (a === b && b === c) {
+//     console.log(true)
+// } else {
+//     console.log(false)
+// }
+
+// Boolean33
+// Даны целые числа a, b, c. Проверить истинность высказывания: «Существует треугольник со сторонами a, b, c».
+
+
+// if20 (не сделал) Сделать самому
+// На числовой оси расположены три точки: A, B, C. Определить, какая из двух последних точек (B или C)
+// расположена ближе к A, и вывести эту точку и ее расстояние от точки A.
+
+// let A = 15
+// let B = 8
+// let C = 10
+//
+// if ((A - B) < (A - C)) {
+//
+// }
+
+// if29
+// Дано целое число. Вывести его строку-описание вида «отрицательное четное число»,
+// «нулевое число», «положительное нечетное число» и т. д.
+
+// let a = 11;
+//
+// if ((a < 0 && a % 2 !== 0)) {
+//     console.log('отрицательное четное число')
+// } if (a === 0) {
+//     console.log('нулевое число')
+// } if (a > 0 && a % 2 !== 0) {
+//     console.log('положительное нечетное число')
+// }
+
+// for17
+// Дано вещественное число A и целое число N (>0). Используя один цикл, найти сумму "1 + A + A^2 + A^3 + ... + A^N"
+
+// let A = 2
+// let N = 5
+// let sum = 0
+//
+// for (let i = 0; i <= N; i++) {
+//     console.log(sum += Math.pow(A, i));
+// }
+// console.log(sum)
+
+// For3
+// Даны два целых числа A и B (A < B). Вывести в порядке убывания все целые числа,
+// расположенные между A и B (не включая числа A и B), а также количество N этих чисел.
+
+// let A = 1
+// let B = 10
+// let count = 1;
+//
+// for (let i = 10; i > A; i--) {
+//     console.log(count++)
+// }
+
+// For7
+// Даны два целых числа A и B (A < B). Найти сумму всех целых чисел от A до B включительно.
+
+// let A = 1
+// let B = 10
+// let sum = 0
+//
+// for (let i = 0; i <= B; i++) {
+//     sum += i
+// }
+// console.log(sum)
+
+
+// Дано вещественное число A и целое число N (>0).
+// Используя один цикл, вывести все степени числа A от 1 до N.
+
+// let A = 5
+// let N = 7
+//
+// for (let i = 1; i <= N; i++) {
+//     console.log(Math.pow(A, i))
+// }
+
+
+// For37  ???
+// Дано целое число N (> 0). Найти сумму " 1^1 + 2^2 + ... +N^N "
+//
+// let N = 2
+// let sum = 0
+//
+// for (let i = 1; i <= N ; i++) {
+//     sum += Math.pow(i, i)
+// }
+// console.log(sum)
+
+// For37
+// Дано целое число N (> 0). Найти сумму " 1^1 + 2^2 + ... +N^N "
+
+// let N = 2
+// let sum = 0
+//
+// for (let i = 1; i <= N ; i++) {
+//     let pow = i
+//     for (let j = 1; j < i; j++) {
+//         pow *= i
+//     }
+//     sum += pow
+// }
+//
+// console.log(sum)
+
+
+// let pow = 2
+//
+// for (let i = 1; i <= 8; i++) {
+//     pow *= 2
+// }
+//
+// console.log(pow)
+
+
+// base JS 4 Arrays.md
+
+// Дан массив A размера N и целое число K (1 ≤ K ≤ N).
+// Преобразовать массив, увеличив каждый его элемент на исходное значение элемента A[K]
+
+// let A = []
+// let N = Math.floor(Math.random() * 60)
+// let K = Math.floor(Math.random() * N)
+//
+// for (let i = 0; i < N; i++) {
+//     A[i] = Math.floor(Math.random() * 10)
+// }
+//
+// console.log(A, A[K])
+// const newArr = A.map(element => element = element + A[K])
+// console.log(newArr)
+
+
+// Дан целочисленный массив размера N. Увеличить все четные числа, содержащиеся в массиве,
+//     на исходное значение первого четного числа.
+//     Если четные числа в массиве отсутствуют, то оставить массив без изменений.
+
+// let arr = [1, 2, 3, 4, 5, 6, 7]
+// let N = 7
+// arr.length = N
+// let sum = 0
+//
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//         sum = arr[i]
+//         break
+//     }
+// }
+//
+// console.log(sum)
+//
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//         arr[i] += sum
+//     }
+// }
+//
+// console.log(arr)
+
+
+// Дан целочисленный массив размера N. Вывести все содержащиеся в данном массиве
+// четные числа в порядке убывания их индексов, а также их количество.
+
+// let arr = [1, 2, 3, 4, 5, 6, 7]
+// let N = 7
+// let posNum = 0
+// let posArr = []
+//
+// arr.forEach(element => {
+//     if (element % 2 == 0) {
+//         posArr.push(element)
+//         posNum++
+//     }
+// })
+//
+// console.log(posNum)
+// console.log(posArr.reverse())
+
+
+// Дан массив ненулевых целых чисел размера N. Проверить, образуют ли его элементы число фибоначи.
+// (Число фибоначи - 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181)
+
+// let arr = [89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
+// let isFib = false
+//
+//     for (let i = 2; i < arr.length; i++) {
+//         if (arr[i] === arr[i-1] + arr[i-2]) {
+//             isFib = true
+//         } else {
+//             isFib = false
+//             break
+//         }
+//     }
+//
+// console.log(isFib)
+
+
+// Сформировать массив длинной N. Проверить чередуются ли в нем четные и нечетные числа
+
+// let arr = [1, 2, 3, 4, 5, 6]
+// let N = 7
+// let isTemp = arr[0] % 2 === 0
+// let firstTemp = isTemp
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         let mod = firstTemp ? arr[i] % 2 == 0 : arr[i] % 2 !== 0
+//         if (isTemp === mod) {
+//             isTemp = !isTemp
+//
+//         } else {
+//             console.log(false)
+//         }
+//     }
+
+
+// Сформировать массив длинной N. Проверить чередуются ли в нем отрицательные и положительные числа.
+
+// let arr = [1, -1, 2, -3, 5, -8, 13]
+// let isFirstPos = arr[0] > 0
+//
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         if (arr[i] < 0 && arr[i + 1] > 0 || (arr[i] > 0 && arr[i + 1] < 0)) {
+//             console.log(true)
+//         } else console.log(false)
+//     }
+
+
+// Дан массив A размера N. Найти минимальный элемент из его
+// элементов с четными номерами (с четным индексами)
+//
+// let arr = [1, 3, 18, 3, 5, 8, 13]
+// let N = 7
+// let evenArr = []
+//
+// arr.map((element,key) => {
+//     if (key % 2 == 0) {
+//         evenArr.push(element)
+//     }
+// })
+//
+// console.log(evenArr)
+// console.log(Math.min())
+
+// Сформировать объект формата {a: 1, b: 2, c: 3, d: 4...}
+
+// let obj = {}
+// let n = 4
+//
+// let asciiString = 'abcd'
+//
+// for (let i = 0; i < n; i++) {
+//     obj[asciiString[i]] = i
+// }
+//
+// console.log(obj)
+
+
+// дан массив объектов [{name: "vasya", age: 33}, {name: "petya", age: 22}, {name: "Sacha": 23},
+// {name: "kolya": age: 46}] 
+// Сформировать новый массив объектов из объектов, у которых age < 30
+
+let arrObj = [
+    {name: 'Vasya', age: 33},
+    {name: 'Petya', age: 22},
+    {name: 'Sasha', age: 23},
+    {name: 'Kolya', age: 46}
+]
+
+let newAr = []
+
+arrObj.forEach(item => {
+    for (let i = 0; i < arrObj.length; i++) {
+        if (arrObj[i]["age"] > 30) {
+            newAr.push(item)
+        }
+    }
+})
+
+console.log(newAr)
+
+
+
+// let arr = [1, 3, 18, 3, 5, 8, 13]
+// let N = 7
+// let evenArr = []
+//
+// arr.map((element,key) => {
+//     if (key % 2 == 0) {
+//         evenArr.push(element)
+//     }
+// })
+
+
+// Дан массив формата ['a','v','w','u','q','p','i'], перевести его в объект
+// формата {a: 0, v:1, w:2,u:3, q:4, p:5, i:6}
+
+// let ar = ['a','v','w','u','q','p','i']
+// let obj = {}
+//
+// for (let i = 0; i < ar.length; i++) {
+//     obj[ar[i]] = i
+//
+// }
+//
+// console.log(obj)
