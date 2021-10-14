@@ -319,3 +319,11 @@ span{
     width: 200px;
     justify-content: space-around;
 }
+
+.margin-bot100{
+    margin-bottom: 100px;
+}
+
+.margin-bot650{
+    margin-bottom: 650px;
+}
