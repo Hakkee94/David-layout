@@ -16,7 +16,6 @@
             height: 20px;
             background: #ddd;
             align-items: center;
-            justify-content: space-between;
         }
 
         label > div span {
@@ -25,20 +24,21 @@
             height: 15px;
             border-radius: 50%;
             border: 1px solid #bbb;
-            visibility:hidden;
+            position:relative;
+            left: 0;
+            transition-duration: 500ms;
         }
 
-        label > div > span.activee {
-            visibility:visible;
+        label > div.active span{
+            left: 15px;
         }
     </style>
 </head>
 <body>
 <label>
     <input type="checkbox"/>
-    <div class="switcher">
-        <span class="activee" name="on"></span>
-        <span name="off"></span>
+    <div class="switcher active">
+        <span name="on"></span>
     </div>
 </label>
 </body>
@@ -46,15 +46,7 @@
   const switcher = document.querySelector('.switcher')
 
   const handlerSwitch = () => {
-    const positionEl = document.querySelector('.activee')
-    const isOn = positionEl.getAttribute('name') == "on" ? true : false
-    if(isOn) {
-      document.querySelector('span[name=on]').removeAttribute('class')
-      document.querySelector('span[name=off]').setAttribute('class', 'activee')
-    } else {
-      document.querySelector('span[name=off]').removeAttribute('class')
-      document.querySelector('span[name=on]').setAttribute('class', 'activee')
-    }
+    switcher.classList.toggle('active')
   }
 
   switcher.addEventListener('click', handlerSwitch)
