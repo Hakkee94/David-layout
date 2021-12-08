@@ -852,15 +852,15 @@
 
 // Дан массив формата ['a','v','w','u','q','p','i'], перевести его в объект формата {a: 0, v:1, w:2,u:3, q:4, p:5, i:6}
 
-// let ar = ['a','v','w','u','q','p','i']
-// let obj = {}
-//
-// for (let i = 0; i < ar.length; i++) {
-//     console.log(ar[i], i)
-//     obj[ar[i]] = i
-// }
-//
-// console.log(obj)
+let ar = ['a','v','w','u','q','p','i']
+let obj = {}
+
+for (let i = 0; i < ar.length; i++) {
+    console.log(ar[i], i)
+    obj[ar[i]] = i
+}
+
+console.log(obj)
 
 // let obj = {a: 0, v:1, w:2,u:3, q:4, p:5, i:6}
 // let ar = []
@@ -1235,7 +1235,6 @@
 // Дана строка. Преобразовать в ней все прописные латинские буквы в строчные.
 
 
-
 // Дана строка, содержащая по крайней мере один символ пробела.
 //     Вывести подстроку, расположенную между первым и вторым пробелом исходной строки. Если строка содержит только один пробел, то вывести пустую строку.
 
@@ -1313,9 +1312,6 @@
 //     }
 //     console.log(string[i])
 // }
-
-
-
 
 
 // 2) дана строка, которую создал пользователь для пароля на сайте.
@@ -1411,49 +1407,41 @@
 // Даны строки S и S0. Удалить из строки S все подстроки, совпадающие с S0.
 //     Если совпадающих подстрок нет, то вывести строку S без изменений.
 
-// let S = 'Sunrise'
+// let S = 'Sunrise Sunrise'
 // let S0 = 'rise'
 // let emptyString = ''
 //
-// let result = S.replace(S0, emptyString)
+// let result = S.replace(/rise/g, emptyString)
 // console.log(result)
-
-// 3) Даны строки S, S1 и S2. Заменить в строке S все вхождения строки S1 на строку S2.
-
-// let S = 'somestring some'
-// let S1 = 'some'
-// let S2 = 'any'
-//
-// S = S.replace(/some/g,S2)
-// console.log(S)
 
 
 // Описать функцию FindMinElem(A, N) целого типа, находящую минимальный элемент целочисленного массива A размера N.
 //     С помощью этой функции найти минимальные элементы массивов A, B, C размера NA, NB, NC соответственно.
 
 
-// let A = [1, 5, 10, 30, -20]
-// let N = 5
-// let B = [10, 2, 34, 98, -42]
-// let C = [1, 5, 10, 30, -24]
+// let A = [1, 5, 10, 30, 2]
+// let B = [10, 2, 34, 98, 4]
+// let C = [1, 5, 10, 30, 6]
 //
 // function FindMinElem(A, N) {
-//     let minAr = 0
-//     for (let i = 0; i < A.length; i++) {
+//     let minAr = Infinity
+//     let length = N < A.length ? N : A.length
+//     for (let i = 0; i < length; i++) {
 //         if (A[i] < minAr) {
-//             minAr += A[i]
+//             minAr = A[i]
 //         }
 //     }
 //     console.log(minAr)
 //     return minAr
 // }
 //
-// FindMinElem(A)
-// FindMinElem(B)
-// FindMinElem(C)
+// FindMinElem(A, 10)
+// FindMinElem(B, 3)
+// FindMinElem(C, 4)
 
 
 // Использовать регулярное выражение!
+
 // 4) Дана строка, состоящая из русских слов, разделенных пробелами (одним или несколькими).
 // Найти длину самого длинного слова. matchAll (Array.from(match))
 
@@ -1465,7 +1453,7 @@
 // for (let i = 0; i < match.length; i++) {
 //     console.log(match[i])
 //     if (match[i].length > bigWord) {
-//         bigWord += match[i].length
+//         bigWord = match[i].length
 //     }
 // }
 //
@@ -1476,9 +1464,9 @@
 //     С помощью этой функции найти номера максимальных элементов массивов A, B, C размера NA, NB, NC соответственно.
 
 // let A = [1, 5, 10, 30, -20]
-// let N = 5
 // let B = [10, 2, 34, 98, -42]
 // let C = [1, 5, 10, 30, -24]
+// let N = 5
 //
 // function FindMinElem(A, N) {
 //     let maxAr = 0
@@ -1498,17 +1486,206 @@
 // 6) Дана строка, содержащая полное имя файла. Выделить из этой строки название первого
 // каталога (без символов «\»). Если файл содержится в корневом каталоге, то вывести символ «\».
 
-let string = 'D://folder/myFiles/game.exe'
+// let string = 'D://folDDDer/myFiles/game.exe'
+// let count = 0
 
+// for (let i = 0; i < string.length; i++) {
+//     if (string[i])
+// }
 
-
-
-
-
+// console.log(string.split('/')[2])
 
 
 // Дана строка, содержащая полное имя файла, то есть имя диска, список каталогов (путь),
 // собственное имя и расширение. Выделить из этой строки имя файла (без расширения).
 
 // let string = 'D://folder/myFiles/game.exe'
+// let count = 0
+// for (let i = 2; i < string.length; i++) {
+//     count++
+//     if (string[i] === '.') {
+//         // console.log(count)
+//         break
+//         }
+//     }
+// for (let i = count; i > 0; i--) {
+//     // console.log(string[i])
+//     if (string[i] === '/') {
+//         break
+//     }
+//     console.log(string[i])
+// }
 
+
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+
+
+// function accum(s) {
+//     let string = ''
+//     for (let i = 0; i < s.length; i++) {
+//         console.log(s[i])
+//         string = string + s[i] + '-'
+//     }
+//     console.log(string)
+// }
+//
+// accum('abcd')
+
+// let string = 'abcd'
+// let s = ''
+//
+// for (let i = 0; i < string.length; i++) {
+//     s += string[i].toUpperCase() + '-'
+// }
+// console.log(s)
+
+
+// Напишите функцию, которая будет принимать количество лепестков каждого
+// цветка и возвращать значение true, если они влюблены, и значение false, если это не так.
+
+// Задача про любовь
+// function lovefunc(flower1, flower2) {
+//     let saraResult
+//     let jimmResult
+//     let isLove
+//     if (flower1 % 2 == 0) {
+//         saraResult = true
+//     }
+//     if (flower2 % 2 == 0) {
+//         jimmResult = true
+//     }
+//     if (saraResult === jimmResult) {
+//         isLove = false
+//     }   else {
+//         isLove = true
+//     }
+//     return isLove
+// }
+//
+// console.log(lovefunc(2, 5));
+
+
+// Write a function that accepts an array of 10 integers (between 0 and 9),
+// that returns a string of those numbers in the form of a phone number.
+
+// createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+
+
+// function createPhoneNumber(numbers) {
+//     let string = ''
+//     string += '('
+//
+//     for (let i = 0; i < 3; i++) {
+//         string += numbers[i]
+//     }
+//     string += ') '
+//
+//     for (let i = 6; i < 9; i++) {
+//         string += numbers[i - 3]
+//     }
+//     string += '-'
+//
+//     for (let i = 10; i < 14; i++) {
+//         string += numbers[i - 4]
+//     }
+//
+//     return string
+// }
+//
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
+
+
+// for (let i = 0; i < 3; i++) {
+//     string += numbers[i]
+// }
+// string += ') '
+//
+// for (let i = 6; i < 9; i++) {
+//     string += numbers[i - 3]
+// }
+// string += '-'
+//
+// for (let i = 10; i < 14; i++) {
+//     string += numbers[i - 4]
+// }
+
+
+// function countSheeps(arrayOfSheep) {
+//     let sheepNum = 0
+//     for (let i = 0; i < arrayOfSheep.length; i++) {
+//         if (arrayOfSheep[i] === true) {
+//             sheepNum++
+//         }
+//     }
+//     return sheepNum
+// }
+//
+// console.log(countSheeps([true, true, true, false,
+//     true, true, true, true,
+//     true, false, true, false,
+//     true, false, false, true,
+//     true, true, true, true,
+//     false, false, true, true]));
+
+
+
+
+// function highAndLow(numbers){
+//     let newString = ''
+//     let max = -Infinity
+//     let min = Infinity
+//
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] !== ' ') {
+//             newString = newString + numbers[i]
+//         }
+//     }
+//     console.log(newString)
+//     for (let i = 0; i < newString.length; i++) {
+//         if (newString[i] > max) {
+//             max = newString[i]
+//         }
+//     }
+//     console.log(max)
+// }
+//
+// highAndLow("1 9 3 4 -5"); // return "9 -5"
+
+
+
+// function diffBig2(arr) {
+//     let firstMax = 0
+//     let secondMax = 0
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > firstMax) {
+//             firstMax = arr[i]
+//         }
+//     }
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if ((arr[i] > secondMax) & (arr[i] !== firstMax)) {
+//             secondMax = arr[i]
+//         }
+//     }
+//     return firstMax - secondMax
+// }
+//
+// console.log(diffBig2([1, 10, 7, 4]));
+
+
+// function highAndLow(numbers){
+//     let max = -Infinity
+//     let min = Infinity
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] > max) {
+//             max = numbers[i]
+//         }
+//         if (numbers[i] < min) {
+//             min = numbers[i]
+//         }
+//     }
+//     return min, max
+// }
+//
+// console.log(highAndLow("1 2 3 4 5"));
