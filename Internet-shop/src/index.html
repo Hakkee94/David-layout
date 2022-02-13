@@ -14,42 +14,46 @@
     </div>
 
     <div class="cart-header">
-        <h2>Card: 0 items</h2>
+        <h2>Card: <span id="countItems">0</span> items</h2>
+        <h2>Total: <span id="totalItems">0</span></h2>
     </div>
 </header>
 
-<div>
+<div class="main-list">
     <span>List of products</span>
 </div>
 <section class="main-menu">
 
     <div class="products-list">
-        <button>Add to cart</button>
+        <div></div>
+        <button class="add-to-cart-btn">Add to cart</button>
     </div>
 
 
-
-    <div>
+    <div id="create-new-container">
         <div>
             <span>Name</span>
             <input class="add-product-input">
         </div>
-        <button class="addNewBtn">Add new product</button>
+        <button disabled class="addNewBtn">Add new product</button>
     </div>
 
     <div class="cart">
-        <div>
-            <span>Cart</span>
+        <div class="cart-items">
+            <div>
+                <span>Cart</span>
+            </div>
+
+            <div>
+                <button class="clear-cart">Clear cart</button>
+            </div>
         </div>
-        <div>
-            <button>Clear cart</button>
+
+        <div class="cart-list">
+            <div class="added-items"></div>
         </div>
+
     </div>
-
-
-
-
-
 
 
 </section>

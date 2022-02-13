@@ -1,28 +1,18 @@
-const path = require('path')
-
+const paths = require('./paths')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    mode: 'development',
-    devServer: {
-        historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './dist'),
-        open: true,
-        compress: true,
-        hot: true,
-        port: 3000,
-    },
     entry: {
-        main: path.resolve(__dirname, './src/index.js')
+        main: paths.index
     },
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: paths.dist,
         filename: "[name].bundle.js"
     },
     plugins: [
         new htmlWebpackPlugin({
             title: "Internet-shop",
-            template: './src/index.html',
+            template: paths.template,
             filename: "index.html",
         })],
     module: {

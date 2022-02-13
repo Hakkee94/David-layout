@@ -5,8 +5,10 @@
 
 .cart-header {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 20px;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 header {
@@ -21,10 +23,11 @@ header {
 
 .cart {
     display: flex;
-    width: 250px;
     justify-content: space-between;
     border: solid 1px black;
     padding: 10px;
+    height: fit-content;
+    flex-direction: column;
 }
 
 input {
@@ -35,3 +38,13 @@ input {
 
 }
 
+.cart-items {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.main-list {
+    padding-bottom: 15px;
+}
