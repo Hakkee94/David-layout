@@ -3,12 +3,12 @@ import './style.scss'
 import {viewCardProducts, viewProducts, showBtn, clearInput, clearCard, newProductBtn, addToCartBtn, NewNameProduct, clearCardBtn, newProductName} from "./view";
 import {prodList, addItem, addToCard, cardList} from "./model";
 
-NewNameProduct.addEventListener('input', showBtn)
-newProductBtn.addEventListener('click', () => addItem(prodList, newProductName, viewProducts))
-newProductBtn.addEventListener('click', clearInput)
+NewNameProduct && NewNameProduct.addEventListener('input', showBtn)
+newProductBtn && newProductBtn.addEventListener('click', () => addItem(prodList, newProductName.value, viewProducts))
+newProductBtn && newProductBtn.addEventListener('click', clearInput)
 
-addToCartBtn.addEventListener('click', () => addToCard(cardList, prodList, viewCardProducts))
-clearCardBtn.addEventListener('click', clearCard)
+addToCartBtn && addToCartBtn.addEventListener('click', () => addToCard(cardList, prodList, viewCardProducts))
+clearCardBtn && clearCardBtn.addEventListener('click', clearCard)
 
 
 

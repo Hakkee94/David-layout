@@ -9,7 +9,7 @@ export const addToCartBtn = document.querySelector('.add-to-cart-btn')
 const cartList = document.querySelector('.cart-list > div')
 export const clearCardBtn = document.querySelector('.clear-cart')
 const addedItems = document.querySelector('.added-items')
-export const newProductName = document.querySelector('#create-new-container .add-product-input').value
+export const newProductName = document.querySelector('#create-new-container .add-product-input')
 
 export const viewProducts = (array, handleChangeCountProduct) => {
     productsList.innerHTML = ''

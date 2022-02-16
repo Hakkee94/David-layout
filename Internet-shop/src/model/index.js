@@ -5,6 +5,7 @@ export let cardList = []
 
 export const addItem = (array, name, renderElements) => {
     const count = 0
+    console.log(name)
     const newProduct = {name, count}
     array.push(newProduct)
     renderElements(array, handleChangeCountProduct)

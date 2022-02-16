@@ -3,7 +3,9 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
-        main: paths.index
+        main: paths.index,
+        catalog: paths.catalog,
+        checkout: paths.checkout
     },
     output: {
         path: paths.dist,
@@ -14,7 +16,18 @@ module.exports = {
             title: "Internet-shop",
             template: paths.template,
             filename: "index.html",
-        })],
+        }),
+        new htmlWebpackPlugin({
+            title: "Catalog",
+            template: paths.templateCatalog,
+            filename: "catalog.html",
+        }),
+        new htmlWebpackPlugin({
+            title: "Checkout",
+            template: paths.templateCheckout,
+            filename: "checkout.html",
+        })
+    ],
     module: {
         rules: [
             {

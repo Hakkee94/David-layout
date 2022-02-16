@@ -1,6 +1,7 @@
 .title {
     display: flex;
     padding-left: 20px;
+    justify-content: space-between;
 }
 
 .cart-header {
@@ -47,4 +48,20 @@ input {
 
 .main-list {
     padding-bottom: 15px;
+}
+
+.special-link {
+    text-decoration: none;
+    color: black;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;
+
+    .main-link {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
 }
