@@ -1,14 +1,47 @@
-'use strict'
-import './style.scss'
-import {viewCardProducts, viewProducts, showBtn, clearInput, clearCard, newProductBtn, addToCartBtn, NewNameProduct, clearCardBtn, newProductName} from "./view";
-import {prodList, addItem, addToCard, cardList} from "./model";
+import './index.scss'
 
-NewNameProduct && NewNameProduct.addEventListener('input', showBtn)
-newProductBtn && newProductBtn.addEventListener('click', () => addItem(prodList, newProductName.value, viewProducts))
-newProductBtn && newProductBtn.addEventListener('click', clearInput)
 
-addToCartBtn && addToCartBtn.addEventListener('click', () => addToCard(cardList, prodList, viewCardProducts))
-clearCardBtn && clearCardBtn.addEventListener('click', clearCard)
+export function addCookie(name, value, options) {
+    options = options || {}
+
+    let expires = options.expires
+
+    if (typeof expires === "number" && expires) {
+        const d = new Date()
+        d.setTime(d.getTime() + expires * 1000)
+        expires = options.expires = d
+    }
+    if (expires && expires.toUTCString) {
+        options.expires = expires.toUTCString()
+    }
+
+    value = encodeURIComponent(value)
+
+    let updatedCookie = name + "=" + value
+
+    for (var propName in options) {
+        updatedCookie += "; " + propName
+        var propValue = options[propName]
+        if (propValue !== true) {
+            updatedCookie += "=" + propValue
+        }
+    }
+    //console.log(updatedCookie)
+    document.cookie = updatedCookie
+}
+
+export function getCookie(name) {
+    const matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ))
+    return matches ? JSON.parse(decodeURIComponent(matches[1])) : undefined
+}
+
+export function deleteCookie(name) {
+    addCookie(name, "", {
+        expires: -1, path: '/'
+    })
+}
 
 
 

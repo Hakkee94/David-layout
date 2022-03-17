@@ -1,0 +1,25 @@
+.title {
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;
+}
+
+.special-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    background-color: #9dcad7;
+    margin-bottom: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}

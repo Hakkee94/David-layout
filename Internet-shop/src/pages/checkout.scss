@@ -1,0 +1,35 @@
+.title {
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.main-list {
+  padding-bottom: 15px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px black;
+  padding: 10px;
+  height: fit-content;
+  flex-direction: column;
+}
+
+.cart-items {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.cart-header {
+  display: flex;
+  flex-direction: column;
+}

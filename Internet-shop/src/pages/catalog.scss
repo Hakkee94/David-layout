@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.main-list {
+  padding-bottom: 15px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: none;
+  width: 100px;
+  height: 150px;
+
+  &.active {
+    display: block;
+  }
+}

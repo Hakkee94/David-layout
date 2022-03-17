@@ -5,7 +5,8 @@ module.exports = {
     entry: {
         main: paths.index,
         catalog: paths.catalog,
-        checkout: paths.checkout
+        checkout: paths.checkout,
+        gallery: paths.gallery,
     },
     output: {
         path: paths.dist,
@@ -16,16 +17,25 @@ module.exports = {
             title: "Internet-shop",
             template: paths.template,
             filename: "index.html",
+            chunks: ["main"]
         }),
         new htmlWebpackPlugin({
             title: "Catalog",
             template: paths.templateCatalog,
             filename: "catalog.html",
+            chunks: ["catalog", "main"]
         }),
         new htmlWebpackPlugin({
             title: "Checkout",
             template: paths.templateCheckout,
             filename: "checkout.html",
+            chunks: ["checkout", "main"]
+        }),
+        new htmlWebpackPlugin({
+            title: "gallery",
+            template: paths.templateGallery,
+            filename: "gallery.html",
+            chunks: ["gallery", "main"]
         })
     ],
     module: {
