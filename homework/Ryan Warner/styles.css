@@ -5,6 +5,7 @@ body{
     padding-left: 16px;
     padding-right: 16px;
     background: linear-gradient(159.89deg, #1A2730 0%, #111A20 100%, #111A20 100%);
+    min-width: 465px;
 }
 
 h1{
@@ -104,8 +105,7 @@ header{
 }
 
 .selfInfo-size{
-    width: 590px;
-    height: 96px;
+    max-width: 590px;
 }
 
 .subtitle{
@@ -160,7 +160,6 @@ header{
 .yawnch{
     background: #1C2C35;
     border-radius: 8px;
-    height: 192px;
     margin-bottom: 16px;
 }
 
@@ -169,14 +168,16 @@ header{
     background: #1C2C35;
     border-radius: 8px;
     height: 192px;
-
+    margin-bottom: 20px;
+    width: calc(50% - 80px);
+    min-width: 268px;
 }
 
 .yawnch-font{
     font-family: monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 33px;
     letter-spacing: 0.1px;
     margin:3px 0;
@@ -186,10 +187,10 @@ header{
 
 .pad35{
     padding: 35px;
+    width: 100%;
 }
 
 .yawnch-h3{
-    width: 681px;
     height: 48px;
     font-family: Jost*;
     font-style: normal;
@@ -212,9 +213,6 @@ header{
 
 .div-button{
     width: 115px;
-    height: 33px;
-    left: 41px;
-    top: 192px;
     border-radius: 6px;
 }
 
@@ -230,11 +228,6 @@ header{
     width: 100%;
 }
 
-
-.mar-bot128{
-    margin-bottom: 128px;
-}
-
 .workon{
     background: #1C2C35;
 }
@@ -245,8 +238,6 @@ header{
 }
 
 .prefooter-h2-size{
-    width: 445px;
-    Height: 54px;
     text-align: center;
 }
 
@@ -286,6 +277,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 90px;
 }
 
 .footer-img{
@@ -295,7 +287,7 @@ header{
 
 .semi-divs{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -319,7 +311,7 @@ header{
 }
 
 .last-article{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .colored-h2 {
@@ -339,14 +331,23 @@ header{
     margin-bottom: 66px;
 }
 
-
-@media (max-width: 1024px) {
-    .mobile{
+    .ryan-main {
         display: flex;
+        padding-bottom: 40px;
     }
 
-    .desktop{
-        display: none;
+    .personal h2 {
+        padding-bottom: 27px;
+    }
+
+    .about h2 {
+        padding-bottom: 27px;
+    }
+
+@media (max-width: 901px) {
+    .semi-divs > .yawnch-semi {
+        width: 100%;
+
     }
 
 
