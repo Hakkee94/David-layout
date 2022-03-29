@@ -1,0 +1,364 @@
+body{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: linear-gradient(159.89deg, #1A2730 0%, #111A20 100%, #111A20 100%);
+    min-width: 465px;
+}
+
+h1{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #ECF8FF;
+}
+
+.ryan-font{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    width: 626px;
+    height: 136px;
+    text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
+    color: rgba(76, 251, 188, 1);
+}
+
+h2{
+    font-family: monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    margin:3px 0;
+    color: #ECF8FF;
+}
+
+h3{
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin:3px 0;
+    align-self: center;
+    color: #ECF8FF;
+}
+
+h4{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    margin:3px 0;
+    color: #ECF8FF;
+}
+
+span{
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+
+.header-articles{
+    display: flex;
+    width: 500px;
+    justify-content: inherit;
+}
+
+.header-RyanWarner{
+    display: flex;
+    align-items: center;
+}
+
+.heartToRyan{
+    margin-right: 20px;
+}
+
+
+.heart-size{
+    width: 23px;
+    height: 21px;
+}
+
+.selfInfo-size{
+    max-width: 590px;
+}
+
+.subtitle{
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #ECF8FF;
+}
+
+.first-content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+.subtitle-tall{
+    font-family: Jost*;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.article-position{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+
+.flex{
+    display: flex;
+}
+
+.article-date{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.pad-right10{
+    padding-right: 10px;
+}
+
+.projects-article{
+    display: flex;
+    padding-top: 85px;
+    padding-bottom: 28px;
+    justify-content: start;
+}
+
+.yawnch{
+    background: #1C2C35;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.yawnch-semi{
+    padding: 35px;
+    background: #1C2C35;
+    border-radius: 8px;
+    height: 192px;
+    margin-bottom: 20px;
+    width: calc(50% - 80px);
+    min-width: 268px;
+}
+
+.yawnch-font{
+    font-family: monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    margin:3px 0;
+    color: #ECF8FF;
+    padding-bottom: 11px;
+}
+
+.pad35{
+    padding: 35px;
+    width: 100%;
+}
+
+.yawnch-h3{
+    height: 48px;
+    font-family: Jost*;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 63px;
+}
+
+.yawnch-h3-semi{
+    width: 291px;
+    height: 72px;
+    font-family: Jost*;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 63px;
+}
+
+.div-button{
+    width: 115px;
+    border-radius: 6px;
+}
+
+.button{
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    background: linear-gradient(
+            159.89deg, #1A2730 0%, #111A20 100%, #111A20 100%);
+    color: #ECF8FF;
+    width: 100%;
+}
+
+.workon{
+    background: #1C2C35;
+}
+
+.h1-position{
+    display: flex;
+    padding-top: 90px;
+}
+
+.prefooter-h2-size{
+    text-align: center;
+}
+
+.div-centre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-size{
+    width: 112px;
+    height: 39px;
+}
+
+.chat{
+    padding-top: 46px;
+    padding-bottom: 82px;
+}
+
+.workon-font{
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
+    color: rgba(76, 251, 188, 1);
+    text-align: center;
+    font-weight: 700;
+}
+
+.footerh3-size{
+    display: flex;
+    margin-top: 59px;
+    height: 58px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.footer-img{
+    width: 20px;
+    height: 20px;
+}
+
+.semi-divs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.yawnch-position{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-h3{
+    width: 424px;
+}
+
+.footer-images{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.article{
+    margin-bottom: 100px;
+}
+
+.last-article{
+    margin-bottom: 100px;
+}
+
+.colored-h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(122, 182, 217, 1);
+}
+
+.last-subtitle {
+    font-family: Jost*;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 66px;
+}
+
+    .ryan-main {
+        display: flex;
+        padding-bottom: 40px;
+    }
+
+    .personal h2 {
+        padding-bottom: 27px;
+    }
+
+    .about h2 {
+        padding-bottom: 27px;
+    }
+
+@media (max-width: 901px) {
+    .semi-divs > .yawnch-semi {
+        width: 100%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
