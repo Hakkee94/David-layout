@@ -223,6 +223,18 @@ header {
     display: flex;
 }
 
+.e-mail-form input {
+    width: 300px;
+    height: 50px;
+    background: #F4F4F4;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 39px;
+    border: none;
+    margin-bottom: 12px;
+    padding-left: 15px;
+}
+
 .button2 {
     background: #EF2779;
     width: 320px;
@@ -717,7 +729,7 @@ header {
 /*Desktop version*/
 
 
-@media (min-width: 1440px) {
+@media (min-width: 1220px) {
     .mobile {
         display: none;
     }
@@ -1056,6 +1068,17 @@ header {
     }
 
     .button4 {
+        width: 300px;
+        height: 50px;
+        background: #F4F4F4;
+        border: 1px solid #E8E8E8;
+        box-sizing: border-box;
+        border-radius: 39px;
+        border: none;
+        margin-bottom: 12px;
+    }
+
+    .e-mail-form input {
         width: 300px;
         height: 50px;
         background: #F4F4F4;
@@ -1432,7 +1455,7 @@ header {
     /*Desktop version*/
 
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1220px) {
         .mobile {
             display: none;
         }
@@ -1489,7 +1512,7 @@ header {
             height: 55px;
             border: none;
             font-size: 16px;
-            font-family: Roboto;
+            font-family: system-ui;
             font-weight: 500;
         }
 
@@ -1502,7 +1525,7 @@ header {
             width: 300px;
             height: 54px;
             margin-right: 12px;
-            padding-left: 10px;
+            padding-left: 15px;
             margin-bottom: 12px;
         }
 
