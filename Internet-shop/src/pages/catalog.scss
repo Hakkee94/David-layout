@@ -39,29 +39,82 @@ img {
 
 
 #add-image {
-  border-radius: 3px;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 28px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
 }
 
 #delete-product {
-  border-radius: 3px;
-}
-
-#back_0 {
-  border-radius: 3px;
-}
-
-#forward_0 {
-  border-radius: 3px;
-}
-
-.add-price-input {
-  border-radius: 3px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 28px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+  margin-left: 24px;
 }
 
 .add-product-input {
-  border-radius: 3px;
-  margin-right: 107px;
+
+}
+
+#back_0 {
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 28px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+#forward_0 {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 28px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+}
+
+input {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: solid 0.5px;
 }
 
 .item-count {
@@ -84,4 +137,21 @@ span {
 
 .special-link {
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.addNewBtn {
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 28px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
 }
