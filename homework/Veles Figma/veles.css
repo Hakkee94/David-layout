@@ -635,7 +635,7 @@ h4 {
 /*Desktop version*/
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1111px) {
     .mobile {
         display: none;
     }
@@ -643,6 +643,14 @@ h4 {
     .desktop {
         display: flex;
         justify-content: center;
+    }
+
+    .desktop-nav-item:hover {
+        cursor: pointer;
+    }
+
+    .last-slider:hover > img {
+        cursor: pointer;
     }
 
     .desktop-review-img:hover > img {
@@ -653,6 +661,11 @@ h4 {
     .desktop-review-img:hover > .h1-special {
         color: #FF7931;
         cursor: pointer;
+    }
+
+    .desktop-nav {
+        display: flex;
+        background: #F7F7F7;
     }
 
     .header-tittle {
@@ -679,9 +692,7 @@ h4 {
 
     div .desktop-underwater > span {
         display: flex;
-        color: white;
         font-size: 72px;
-        width: 250px;
         text-align: center;
         font-weight: 200;
         font-family: system-ui;
@@ -875,6 +886,21 @@ h4 {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
+    }
+
+    .h2-footer {
+        font-family: system-ui;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 37px;
+        letter-spacing: 1px;
+        color: #000000;
+    }
+
+    .desktop-footer {
+        height: 195px;
+        background: #F7F7F7;
     }
 
 
